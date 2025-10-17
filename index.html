@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="theme-toggle">🌙</button>
+    
     <div class="Calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
+            <button onclick="square()">x²</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="sin()">sin()</button>
+            <button onclick="cos()">cos()</button>
+            <button onclick="tan()">tan()</button>
+            
             <button onclick="clearDisplay()">AC</button>
             <button onclick="deleteChar()">DEL</button>
             <button onclick="appendChar('%')">%</button>
@@ -33,7 +41,7 @@
 
             <button onclick="appendChar('0')" class="zero">0</button>
             <button onclick="appendChar('.')">.</button>
-            <button onclick="Calculate()">=</button>
+            <button onclick="Calculate()" class="equal">=</button>
         </div>
     </div>
 
